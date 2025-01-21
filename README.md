@@ -1,3 +1,2 @@
 pachareeyaporn buakham
-พัชรียาพร บัวคำsdfghjkl;
-asdefgthyjkl;/.,mnbvcd
+พัชรียาพร บัวคำ
