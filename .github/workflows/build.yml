@@ -1,4 +1,3 @@
-# Note: In a yml each level is padded by 2 spaces
 name: Flutter
 
 on:
@@ -17,7 +16,6 @@ jobs:
     runs-on: macos-latest
 
     steps:
-
       # Clones the project on the machine
       - uses: actions/checkout@v4
 
@@ -29,22 +27,21 @@ jobs:
           # flutter-version: '3.16.8'
           # ^ If you want to use a specific version of flutter
       
-      # Fetches proj dependencies from pub
+      # Fetches project dependencies from pub
       - name: Install dependencies
         run: flutter pub get
-          # ^ If you want to use a specific version of flutter
 
       # Verifies if the dart code is formatted well
       - name: Verify formatting
-      run: dart format --output=none --set-exit-if-changed .
-        # --set-exit-if-changed stops execution if the any code is not well formatted
-        # --output=none prints files which needs to be formatted
+        run: dart format --output=none --set-exit-if-changed .
+        # --set-exit-if-changed stops execution if the code is not well formatted
+        # --output=none prints files that need to be formatted
 
-      # Checks for Symantic errors. Can be configured using analysis_options.yaml
+      # Checks for semantic errors. Can be configured using analysis_options.yaml
       - name: Analyze project source
-      run: flutter analyze --fatal-warnings
-       # --fatal-warnings stops execution if any warnings are found
+        run: flutter analyze --fatal-warnings
+        # --fatal-warnings stops execution if any warnings are found
 
-       # Runs unit test
+      # Runs unit tests
       - name: Run tests
         run: flutter test
