@@ -4,6 +4,7 @@ void main() {
   runApp(MyApp());
 }
 
+// ignore: use_key_in_widget_constructors
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -14,6 +15,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
+// ignore: use_key_in_widget_constructors
 class FoodRecommendationScreen extends StatelessWidget {
   // รายการ URL ของภาพอาหาร
   final List<String> foodImages = [
@@ -47,6 +49,7 @@ class FoodRecommendationScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        // ignore: prefer_const_constructors
         title: Text('แนะนำอาหารและของว่าง'),
         backgroundColor: Colors.green[200],
       ),
@@ -57,6 +60,7 @@ class FoodRecommendationScreen extends StatelessWidget {
             flex: 2,
             child: GridView.builder(
               gridDelegate:
+                // ignore: prefer_const_constructors
                 SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
                 crossAxisSpacing: 10,
@@ -73,6 +77,7 @@ class FoodRecommendationScreen extends StatelessWidget {
                       // ใช้ชื่อจาก foodNames แสดงข้อความอาหารที่ตรงกัน
                       Text(foodNames[index]), 
                       IconButton(
+                        // ignore: prefer_const_constructors
                         icon: Icon(Icons.arrow_forward),
                         onPressed: () {
                           // Navigate to next page
@@ -90,6 +95,7 @@ class FoodRecommendationScreen extends StatelessWidget {
           Expanded(
             flex: 1,
             child: GridView.builder(
+              // ignore: prefer_const_constructors
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 3,
                 crossAxisSpacing: 10,
@@ -106,6 +112,7 @@ class FoodRecommendationScreen extends StatelessWidget {
                       // ใช้ชื่อจาก snackNames แสดงข้อความของว่างที่ตรงกัน
                       Text(snackNames[index]), 
                       IconButton(
+                      // ignore: prefer_const_constructors
                       icon: Icon(Icons.arrow_forward),
                       onPressed: () {
                           // Navigate to next page
@@ -123,6 +130,7 @@ class FoodRecommendationScreen extends StatelessWidget {
         onPressed: () {
           // Add new item logic here
         },
+        // ignore: sort_child_properties_last, prefer_const_constructors
         child: Icon(Icons.add),
         backgroundColor: Colors.blue,
       ),
