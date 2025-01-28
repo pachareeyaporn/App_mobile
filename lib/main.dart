@@ -5,8 +5,8 @@ import 'package:flutter_application_1/Page5.dart';
 import 'package:flutter_application_1/Page6.dart';
 import 'package:flutter_application_1/Page7.dart';
 import 'package:flutter_application_1/Page8.dart';
-import 'page1.dart';
-import 'page2.dart';
+import 'Page1.dart';
+import 'Page2.dart';
 
 void main() {
   runApp(MyApp());
