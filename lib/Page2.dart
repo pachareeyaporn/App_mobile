@@ -154,7 +154,7 @@ class _Page2State extends State<Page2> {
                     children: [
                       IconButton(
                         // ignore: prefer_const_constructors
-                        icon: Icon(Icons.thumb_down, color: Colors.red),
+                        icon: Icon(Ic ons.thumb_down, color: Colors.red),
                         onPressed: () {
                           setState(() {
                             dislikeCount++;
