@@ -8,12 +8,12 @@ import 'package:flutter_application_1/Page8.dart';
 import 'Page1.dart';
 import 'Page2.dart';
 
-void main() {
+oid main() {
   runApp(MyApp());
 }
 
 // ignore: use_key_in_widget_constructors
-class MyApp extends StatelessWidget {
+lass MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
